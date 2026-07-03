@@ -1,3 +1,4 @@
+//este es el código bruto de Node.js, pero ahora usaremos Express, no se está usando
 const fs = require('fs')
 
 const requestHandler = (req, res) => {
