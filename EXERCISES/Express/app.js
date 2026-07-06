@@ -1,15 +1,16 @@
+const path = require('path')
 const express = require('express')
 
 const app = express()
 
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.use('/users',(req, res, next) => {
-    console.log('This is users middleware')
-    res.send('<h1>Users Page</h1>')
+    res.sendFile(path.join(__dirname, 'views', 'users.html'))
 })
 
 app.use('/',(req, res, next) => {
-    console.log('First middleware')
-    res.send('<h1>Main Page</h1>')
+    res.sendFile(path.join(__dirname, 'views', 'home.html'))
 })
 
 
