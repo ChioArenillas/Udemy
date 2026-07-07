@@ -1,0 +1,25 @@
+.form-control {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-control label {
+    font-weight: 600;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #3e47cb;
+    border-radius: 5px;
+    font: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control input:focus {
+    outline: none;
+    border-color: #2d3497;
+    box-shadow: 0 0 0 3px rgba(62, 71, 203, 0.15);
+}
