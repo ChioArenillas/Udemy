@@ -11,6 +11,12 @@ body {
 main {
     padding: 2rem 3rem;
 }
+a{
+    text-decoration: none;
+}
+.centered{
+    text-align: center;
+}
 
 .main-header {
     width: 100%;
