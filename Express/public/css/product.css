@@ -24,6 +24,12 @@
     color: #4d4d4d;
     margin-bottom: 0.5rem;
 }
+.image{
+    height: 15rem;
+}
+.image img {
+    height: 100%;
+}
 
 .product__description {
     text-align: center;
