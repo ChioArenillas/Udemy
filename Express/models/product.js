@@ -4,7 +4,7 @@ const sequelize = require('../util/database')
 
 const Product = sequelize.define('product', {
     id: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.INTEGER, //INTEGER: va aumentando el valor cada vez que se crea uno nuevo
         autoIncrement: true,
         allowNull: false,
         primaryKey: true
