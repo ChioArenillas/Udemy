@@ -2,7 +2,6 @@ const path = require('path')
 const express = require('express')
 const bodyParser = require('body-parser')
 
-//const expressHbs = require('express-handlebars') // Para usar Handlebars
 
 const errorController = require('./controllers/error')
 const sequelize = require('./util/database')
@@ -16,12 +15,6 @@ const OrderItem = require('./models/order-item')
 
 const app = express()
 
-//Si usas Hanslebars
-// app.engine('hbs', expressHbs({
-//     layoutsDir: 'views/layout/', 
-//     defaultLayout: 'main-layout', 
-//     extname: 'hbs'
-// }))
 
 app.set('view engine', 'ejs')
 app.set('views', 'views') //el primer views es el nombre de la carpeta "views"
